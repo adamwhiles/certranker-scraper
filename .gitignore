@@ -1,0 +1,13 @@
+# Ignore the virtual environment folder
+my_env/
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore IDE settings
+.vscode/
+
+# Ignore other files or folders that are not part of the project
+*.log
+tmp/
