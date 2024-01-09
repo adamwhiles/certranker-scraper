@@ -1,8 +1,6 @@
 # Microsoft Certification Scraper
 
-This Python script uses Selenium and the Edge driver to scrape information about Microsoft certifications and uploads it into a Cosmos DB.
-
-- Cosmos DB portion is still in progress
+This Python script uses Selenium and the Edge driver to scrape information about Microsoft exams and then use the OpenAI API to generate a short description for each exam. Once everything is collected it is uploaded into Cosmos DB.
 
 ## Prerequisites
 
@@ -12,6 +10,14 @@ Before you run this project you will need the following:
 - Connetion details for the Cosmos DB
 - Environmental variables for Cosmos DB Connection
 - Python 3
+
+Necessary Environment Variables
+```
+OPENAI_API - OpenAI API Key
+CONNECTION_STRING - Cosmos DB Connection String
+DB_NAME - Cosmos DB Database Name
+CONTAINER_NAME - Cosmos DB Container Name
+```
 
 ## Installation
 Create a Python Virtual Environment, clone this repository and install dependencies:
