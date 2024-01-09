@@ -11,3 +11,5 @@ __pycache__/
 # Ignore other files or folders that are not part of the project
 *.log
 tmp/
+
+.env

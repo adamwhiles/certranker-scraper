@@ -70,7 +70,7 @@ def getExams():
                 text = element.text
                 exam_name = text.split(": ")[1]
                 href_link = element.get_attribute("href")
-                exam_code = text.replace("Exam", "").split(":")[0]
+                exam_code = text.replace("Exam", "").split(":")[0].strip()
 
                 # Generate description from ChatGPT
                 description = getDescription(exam_code)
