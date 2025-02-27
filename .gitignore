@@ -1,5 +1,7 @@
 # Ignore the virtual environment folder
 my_env/
+venv/
+test/
 
 # Ignore compiled Python files
 *.pyc

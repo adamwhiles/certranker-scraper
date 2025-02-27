@@ -5,22 +5,24 @@ This Python script uses Selenium and the Edge driver to scrape information about
 ## Prerequisites
 
 Before you run this project you will need the following:
+
 - Browser driver, in this case Edge: [https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH)
-- A Cosmos DB account with SQL API, a database and container.
-- Connetion details for the Cosmos DB
-- Environmental variables for Cosmos DB Connection
+- Python ODBC Driver [https://learn.microsoft.com/en-us/sql/connect/python/pyodbc/step-1-configure-development-environment-for-pyodbc-python-development?view=sql-server-ver16&tabs=linux#install-the-odbc-driver](https://learn.microsoft.com/en-us/sql/connect/python/pyodbc/step-1-configure-development-environment-for-pyodbc-python-development?view=sql-server-ver16&tabs=linux#install-the-odbc-driver)
+- An Azure SQL Database (Serverless is what I used)
 - Python 3
+- OpenAI API Account and Credits
 
 Necessary Environment Variables
+
 ```
 OPENAI_API - OpenAI API Key
-CONNECTION_STRING - Cosmos DB Connection String
-DB_NAME - Cosmos DB Database Name
-CONTAINER_NAME - Cosmos DB Container Name
+AZURE_SQL_CONNECTIONSTRING='Driver={ODBC Driver 18 for SQL Server};Server=tcp:SERVERNAME.database.windows.net,1433;Database=DBNAME;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30'
 ```
 
 ## Installation
+
 Create a Python Virtual Environment, clone this repository and install dependencies:
+
 ```
 pip install venv
 git clone https://github.com/adamwhiles/msvote-scraper.git
